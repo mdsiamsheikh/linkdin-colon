@@ -206,12 +206,12 @@ body {
 }
 .wrapper {
   background: white;
-  position: fixed;
+  /* position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 60px; */
 }
 .wrapper .header-container {
   max-width: 1200px;
