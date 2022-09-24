@@ -37,6 +37,7 @@
         />
         <button type="submit" class="btn-secondery">Accept and Resister</button>
       </form>
+      <p>Already resisterd? <a href="#">Login</a></p>
     </div>
   </div>
 </template>
@@ -60,11 +61,10 @@ body {
 .signup {
   display: flex;
   align-items: center;
-  /* text-align: center; */
+  text-align: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
-  padding: 10px 40px;
   background: #f3f2ef;
 }
 
@@ -72,34 +72,68 @@ body {
   background-color: #ffffff;
   border-radius: 0.7rem;
   width: 450px;
-  padding: 10px;
+  padding: 25px;
 }
 
 .text-center h1 {
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 10px 40px;
+  color: #333333;
+  font-size: 2.5rem;
 }
 
 .form_profile {
-  border: 1px solid #ffffff;
   border-radius: 4px;
   display: block;
+  border: none;
   font-size: 14px;
 }
 
 .form_profile input {
   display: flex;
   width: 100%;
-  margin: 1rem 0rem 1.4rem;
+  margin: 0.5rem 0rem 1.2rem;
   border-radius: 5px;
   color: #f3f2ef;
+  outline: none;
+  border: 1px solid #333;
   padding: 15px;
-  border: 1px solid rgb(90, 87, 87);
+  box-shadow: inset 0px 5px 5px 0px #ffffff;
 }
 
 .form_profile input:hover {
-  box-shadow: #f3f2ef;
+  transform: scale(1);
+  box-shadow: 0px 10px 20px 2px rgba(14, 13, 13, 0.25);
+}
+
+.form_profile .btn-secondery {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 17px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5rem;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: #076dd4;
+}
+
+.form_profile .btn-secondery:hover {
+  background: #4848fa;
+}
+
+.input-group p {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.input-group a {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
 }
 </style>
