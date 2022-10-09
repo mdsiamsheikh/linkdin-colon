@@ -1,5 +1,8 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  mode: 'spa',
+
+
   head: {
     title: 'linkedin-colon',
     htmlAttrs: {
@@ -32,8 +35,23 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
+  modules: [ ['@nuxtjs/firebase',
+    {
+      config: {
+        apiKey: "AIzaSyC1R1-oXUGS2lL_pBYRlvv-GaPi8F14Xsk",
+        authDomain: "nuxt-firebaseauth-72ffc.firebaseapp.com",
+        projectId: "nuxt-firebaseauth-72ffc",
+        storageBucket: "nuxt-firebaseauth-72ffc.appspot.com",
+        messagingSenderId: "249132870316",
+        appId: "1:249132870316:web:9213d5e809e346de654d09",
+        measurementId: "G-YXF285L1TF"
+      },
+      services: {
+        auth: true // Just as example. Can be any other service.
+      }
+    }
+  ]
+],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
